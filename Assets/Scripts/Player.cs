@@ -1,19 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private float moveSpeed=0.5f;
-    [SerializeField] private float jumpVelocity=5f;
-    [SerializeField] private float jumpRememberTime=0.25f;
+    [SerializeField] private float jumpVelocity;
+    [SerializeField] private float jumpRememberTime;
     [SerializeField] private float coyoteTimer;
-    [SerializeField] private float horizontalDamping = 0.5f;
-    [SerializeField] private float horizontalStoppingDaming = 0.75f;
-    [SerializeField] private float horizontalTurningDamping = 0.25f;
-    [SerializeField] private float shortJumpHeight = 0.5f;
-    [SerializeField] private float checkRadius = 0.1f;
+    [SerializeField] private float horizontalDamping;
+    [SerializeField] private float horizontalStoppingDaming;
+    [SerializeField] private float horizontalTurningDamping;
+    [SerializeField] private float shortJumpHeight;
+    [SerializeField] private float checkRadius;
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private Transform grounderObject;
     private float jumpRemeber;
@@ -68,5 +68,10 @@ public class PlayerMovement : MonoBehaviour
             }
 
         rb.velocity = new Vector2(horizontalVelocity, rb.velocity.y);
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }
