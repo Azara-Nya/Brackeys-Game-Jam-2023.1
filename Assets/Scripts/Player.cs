@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float horizontalTurningDamping;
     [SerializeField] private float shortJumpHeight;
     [SerializeField] private float checkRadius;
+    [SerializeField] private float transTime = 1f;
     [SerializeField] private int regressionAmount = 1;
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private Transform grounderObject;
@@ -110,5 +111,17 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            StartCoroutine(carte());
+        }
+    }
+
+    IEnumerator carte()
+    {
+        //play level transtion animation
+        yield return new WaitForSeconds(transTime);
+        SceneManager.LoadScene("MainMenu");
     }
 }
