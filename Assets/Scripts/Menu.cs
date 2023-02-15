@@ -7,6 +7,7 @@ public class Menu : MonoBehaviour
 {
     [SerializeField] private float transTime = 1f;
     [SerializeField] private string scene = "MainMenu";
+    [SerializeField] private Animator Andy;
     public void Loader()
     {
         StartCoroutine(LoadNextScene());
@@ -14,7 +15,7 @@ public class Menu : MonoBehaviour
 
     IEnumerator LoadNextScene()
     {
-        //play scene transtion animation
+        Andy.SetTrigger("StartFade");
         yield return new WaitForSeconds(transTime);
         SceneManager.LoadScene(scene);
     }

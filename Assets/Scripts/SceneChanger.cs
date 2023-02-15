@@ -7,6 +7,7 @@ public class SceneChanger : MonoBehaviour
 {
     [SerializeField] private string scene="MainMenu";
     [SerializeField] private float transTime = 1f;
+    [SerializeField] private Animator Andy;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -24,6 +25,7 @@ public class SceneChanger : MonoBehaviour
 
     IEnumerator LoadNextScene()
     {
+        Andy.SetTrigger("StartFade");
         yield return new WaitForSeconds(transTime);
         SceneManager.LoadScene(scene);
     }

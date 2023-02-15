@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform regressionPoolPosition;
     [SerializeField] private GameObject regressionCat;
     [SerializeField] private Animator Andy;
+    [SerializeField] private Animator CAndy;
     private GameObject[] RegaeCats;
 
     private float jumpRemeber;
@@ -153,7 +154,7 @@ public class Player : MonoBehaviour
 
     IEnumerator carte()
     {
-        //play level transtion animation
+        CAndy.SetTrigger("StartFade");
         yield return new WaitForSeconds(transTime);
         SceneManager.LoadScene("MainMenu");
     }
