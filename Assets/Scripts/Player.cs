@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject regressionCat;
     [SerializeField] private Animator Andy;
     [SerializeField] private Animator CAndy;
+    [SerializeField] private AudioSource JumpSFX;
+    [SerializeField] private AudioSource RegressionSFX;
     private GameObject[] RegaeCats;
 
     private float jumpRemeber;
@@ -51,6 +54,8 @@ public class Player : MonoBehaviour
                 RegaeCats = GameObject.FindGameObjectsWithTag("RegressionCat");
                 if (!RegaeCats[i].GetComponent<Regression>().isUsed)
                 {
+                    RegressionSFX.Play();
+                    CAndy.SetTrigger("RegressionFade");
                     RegaeCats[i].transform.position = startingPosition.transform.position;
                     RegaeCats[i].GetComponent<Regression>().StartReplay();
                     RegaeCats[i].GetComponent<Regression>().isUsed = true;
@@ -71,13 +76,15 @@ public class Player : MonoBehaviour
         if(isGrounded)
         {
             coyoteTime = coyoteTimer;
+            Andy.SetBool("isJump", false);
         }
 
         jumpRemeber -= Time.deltaTime;
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            jumpRemeber = jumpRememberTime;
+        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {        
+            JumpSFX.Play();
             Andy.SetBool("isJump", true);
+            jumpRemeber = jumpRememberTime;
         }
 
         if(Input.GetKeyUp(KeyCode.Space))
@@ -129,7 +136,7 @@ public class Player : MonoBehaviour
         {
             Andy.SetBool("isWalking", false);
         }
-        else
+        else 
         {
             Andy.SetBool("isWalking", true);
         }
