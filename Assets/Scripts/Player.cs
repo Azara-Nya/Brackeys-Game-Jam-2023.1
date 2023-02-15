@@ -21,10 +21,13 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform startingPosition;
     [SerializeField] private Transform regressionPoolPosition;
     [SerializeField] private GameObject regressionCat;
+    [SerializeField] private Animator Andy;
     private GameObject[] RegaeCats;
 
     private float jumpRemeber;
     private float coyoteTime;
+    private float moveInput;
+    private bool facingLeft;
     private bool isGrounded;
 
     void Start()
@@ -53,6 +56,7 @@ public class Player : MonoBehaviour
                     if(i < RegaeCats.Length-1)
                     {
                         RegaeCats[i + 1].GetComponent<Regression>().positions = new List<Vector2>();
+                        RegaeCats[i + 1].GetComponent<Regression>().movePositions = new List<float>();
                     }
                     rb.transform.position = startingPosition.transform.position;
                     break;
@@ -72,10 +76,12 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             jumpRemeber = jumpRememberTime;
+            Andy.SetBool("isJump", true);
         }
 
         if(Input.GetKeyUp(KeyCode.Space))
         {
+            Andy.SetBool("isJump", false);
             if(rb.velocity.y > 0)
             {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * shortJumpHeight);
@@ -94,15 +100,15 @@ public class Player : MonoBehaviour
 
         if(Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.01f)
             {
-                horizontalVelocity *= Mathf.Pow(1f - horizontalStoppingDaming, Time.deltaTime * 10f);
+                horizontalVelocity *= Mathf.Pow(1f - horizontalStoppingDaming, Time.fixedDeltaTime * 10f);
             }
         else if(Mathf.Sign(Input.GetAxisRaw("Horizontal")) != Mathf.Sign(horizontalVelocity))
             {
-                horizontalVelocity *= Mathf.Pow(1f - horizontalTurningDamping, Time.deltaTime * 10f);
+                horizontalVelocity *= Mathf.Pow(1f - horizontalTurningDamping, Time.fixedDeltaTime * 10f);
             }
         else
             {
-            horizontalVelocity *= Mathf.Pow(1f - horizontalDamping, Time.deltaTime * 10f);
+            horizontalVelocity *= Mathf.Pow(1f - horizontalDamping, Time.fixedDeltaTime * 10f);
             }
 
         rb.velocity = new Vector2(horizontalVelocity, rb.velocity.y);
@@ -116,6 +122,33 @@ public class Player : MonoBehaviour
         {
             StartCoroutine(carte());
         }
+
+        moveInput = Input.GetAxisRaw("Horizontal");
+        if(moveInput == 0)
+        {
+            Andy.SetBool("isWalking", false);
+        }
+        else
+        {
+            Andy.SetBool("isWalking", true);
+        }
+
+        if(facingLeft && moveInput > 0)
+        {
+            Kowalski();
+        }
+        else if(!facingLeft && moveInput < 0)
+        {
+            Kowalski();
+        }
+    }
+
+    void Kowalski()
+    {
+        facingLeft = !facingLeft;
+        Vector3 Scaler = transform.localScale;
+        Scaler.x *= -1;
+        transform.localScale = Scaler;
     }
 
     IEnumerator carte()
