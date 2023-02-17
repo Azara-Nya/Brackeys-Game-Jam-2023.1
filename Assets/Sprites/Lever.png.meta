@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64b762bea4622d640b485fa40c094815
+guid: 0e656c9a494c9d9408672170944c94fe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,148 +105,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_2
+      name: Lever_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2688
-        width: 928
+        y: 1344
+        width: 672
         height: 672
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fb3f5491ea113944a1ec1dfcfa6c79a
-      internalID: -599040999
+      spriteID: 834c3d1eda0348845ad9f3dfad2c3d10
+      internalID: 2016327710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_0
+      name: Lever_1
       rect:
         serializedVersion: 2
-        x: 928
-        y: 2688
-        width: 928
+        x: 672
+        y: 1344
+        width: 672
         height: 672
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0acf980b0e8b0e6478aad2302e5b823e
-      internalID: -227347207
+      spriteID: 022f7170d5167484f89d90c4fc7220b8
+      internalID: 493802769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_3
+      name: Lever_2
       rect:
         serializedVersion: 2
-        x: 2784
-        y: 2688
-        width: 928
+        x: 0
+        y: 672
+        width: 672
         height: 672
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01a866547c4d8154ebcb344cddec89c2
-      internalID: -241610932
+      spriteID: d20bfe7c8aa9a7c48a4d42de1ae7cc3e
+      internalID: -1565762455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_1
+      name: Lever_3
       rect:
         serializedVersion: 2
-        x: 32
-        y: 1024
-        width: 896
+        x: 672
+        y: 672
+        width: 672
         height: 672
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26006c89975af2c4dadfc787ebdefcd5
-      internalID: 1437677004
+      spriteID: f2cd8d59a686fd94a8346ac4a1ac73c6
+      internalID: -733874071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_4
+      name: Lever_4
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 928
-        height: 672
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 102f0a8d87a70ca4b88be8d9c1ddedff
-      internalID: -138390888
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 32
+        x: 0
         y: 0
-        width: 896
+        width: 672
         height: 672
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1854491fe558c5842b2f9f3d17341178
-      internalID: 1400264414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 1022
-        y: 0
-        width: 930
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a9502b6f428b20468da62aca02da56d
-      internalID: 722840552
+      spriteID: 34747429c88461748823f10aa0b60ac2
+      internalID: 1176607665
       vertices: []
       indices: 
       edges: []
@@ -262,13 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Catto_Walk_Spritesheet_5: 1400264414
-      Catto_Walk_Spritesheet_0: -227347207
-      Catto_Walk_Spritesheet_6: 722840552
-      Catto_Walk_Spritesheet_2: -599040999
-      Catto_Walk_Spritesheet_3: -241610932
-      Catto_Walk_Spritesheet_1: 1437677004
-      Catto_Walk_Spritesheet_4: -138390888
+      Lever_2: -1565762455
+      Lever_4: 1176607665
+      Lever_0: 2016327710
+      Lever_1: 493802769
+      Lever_3: -733874071
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

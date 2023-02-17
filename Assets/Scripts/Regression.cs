@@ -45,6 +45,7 @@ public class Regression : MonoBehaviour
     
     void Record()
     {
+        Andy.SetBool("isSitting", true);
         if (positions.Count > Mathf.Round(30f / Time.fixedDeltaTime))
         {
             positions.RemoveAt(0);
@@ -57,6 +58,7 @@ public class Regression : MonoBehaviour
 
     void Play()
     {
+        Andy.SetBool("isSitting", false);
         if (positions.Count > 0)
         {
             transform.position = positions[0];

@@ -96,6 +96,15 @@ public class Player : MonoBehaviour
             }
         }
 
+        if(rb.velocity.y < 0)
+        {
+            Andy.SetBool("isFalling", true);
+        }
+        else
+        {
+            Andy.SetBool("isFalling", false);
+        }
+
         if(jumpRemeber > 0f && coyoteTime > 0f)
         {
             jumpRemeber = 0f;

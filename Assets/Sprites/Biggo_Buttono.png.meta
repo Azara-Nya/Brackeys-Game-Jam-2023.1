@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64b762bea4622d640b485fa40c094815
+guid: 1eb2611d1ae05014bb61cdcf814a2b66
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -105,148 +105,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_2
+      name: Biggo_Buttono_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2688
-        width: 928
-        height: 672
+        y: 1536
+        width: 1056
+        height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fb3f5491ea113944a1ec1dfcfa6c79a
-      internalID: -599040999
+      spriteID: 9414751906a63cf4fa43e13793ef1532
+      internalID: 577070175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_0
+      name: Biggo_Buttono_1
       rect:
         serializedVersion: 2
-        x: 928
-        y: 2688
-        width: 928
-        height: 672
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0acf980b0e8b0e6478aad2302e5b823e
-      internalID: -227347207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 2784
-        y: 2688
-        width: 928
-        height: 672
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01a866547c4d8154ebcb344cddec89c2
-      internalID: -241610932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 32
+        x: 0
         y: 1024
-        width: 896
-        height: 672
+        width: 1056
+        height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26006c89975af2c4dadfc787ebdefcd5
-      internalID: 1437677004
+      spriteID: c5fd295bfc636544489296ae4f56ecd1
+      internalID: -1190516653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_4
+      name: Biggo_Buttono_2
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 928
-        height: 672
+        x: 0
+        y: 512
+        width: 1056
+        height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 102f0a8d87a70ca4b88be8d9c1ddedff
-      internalID: -138390888
+      spriteID: bda89709d664ffc48a4b2cde8401bbc3
+      internalID: 1130160178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_5
+      name: Biggo_Buttono_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 0
-        width: 896
-        height: 672
+        width: 1056
+        height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1854491fe558c5842b2f9f3d17341178
-      internalID: 1400264414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 1022
-        y: 0
-        width: 930
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a9502b6f428b20468da62aca02da56d
-      internalID: 722840552
+      spriteID: 2110694d6b2e56548a3790f5135af0b0
+      internalID: 427681797
       vertices: []
       indices: 
       edges: []
@@ -262,13 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Catto_Walk_Spritesheet_5: 1400264414
-      Catto_Walk_Spritesheet_0: -227347207
-      Catto_Walk_Spritesheet_6: 722840552
-      Catto_Walk_Spritesheet_2: -599040999
-      Catto_Walk_Spritesheet_3: -241610932
-      Catto_Walk_Spritesheet_1: 1437677004
-      Catto_Walk_Spritesheet_4: -138390888
+      Biggo_Buttono_1: -1190516653
+      Biggo_Buttono_3: 427681797
+      Biggo_Buttono_2: 1130160178
+      Biggo_Buttono_0: 577070175
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

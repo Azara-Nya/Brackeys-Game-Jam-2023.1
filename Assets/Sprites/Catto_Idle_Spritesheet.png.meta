@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64b762bea4622d640b485fa40c094815
+guid: 85556f88dbdbbc748b4a8ce45349e930
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,76 +105,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_2
+      name: Catto_Idle_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2048
+        width: 928
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52f39bdf912219418300fc59e83e50e
+      internalID: 841218913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catto_Idle_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 2048
+        width: 961
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2366f0b65176dda4282678759030d5c8
+      internalID: 846076244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catto_Idle_Spritesheet_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 2688
-        width: 928
-        height: 672
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fb3f5491ea113944a1ec1dfcfa6c79a
-      internalID: -599040999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_0
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 2688
-        width: 928
-        height: 672
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0acf980b0e8b0e6478aad2302e5b823e
-      internalID: -227347207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 2784
-        y: 2688
-        width: 928
-        height: 672
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01a866547c4d8154ebcb344cddec89c2
-      internalID: -241610932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 32
         y: 1024
-        width: 896
-        height: 672
+        width: 960
+        height: 736
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +161,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26006c89975af2c4dadfc787ebdefcd5
-      internalID: 1437677004
+      spriteID: 098ebb9d280274340ad17713f298486e
+      internalID: 1959492966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_4
+      name: Catto_Idle_Spritesheet_3
       rect:
         serializedVersion: 2
         x: 1024
         y: 1024
+        width: 960
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4662eae83ef80f348ac2184649eb89e3
+      internalID: 133751497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Catto_Idle_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
         width: 928
-        height: 672
+        height: 832
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 102f0a8d87a70ca4b88be8d9c1ddedff
-      internalID: -138390888
+      spriteID: 57ec0642286dbf442a4dd76a65344262
+      internalID: 1524503270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_5
+      name: Catto_Idle_Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 0
-        width: 896
-        height: 672
+        width: 928
+        height: 832
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,29 +224,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1854491fe558c5842b2f9f3d17341178
-      internalID: 1400264414
+      spriteID: da36b7e20714c6e44992b59b8c4ec27b
+      internalID: 1837611468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Catto_Walk_Spritesheet_6
+      name: Catto_Idle_Spritesheet_6
       rect:
         serializedVersion: 2
-        x: 1022
-        y: 0
-        width: 930
-        height: 640
+        x: 2052
+        y: 2048
+        width: 957
+        height: 737
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a9502b6f428b20468da62aca02da56d
-      internalID: 722840552
+      spriteID: e05301057c77ce7489e595606abd4b1c
+      internalID: -379350457
       vertices: []
       indices: 
       edges: []
@@ -262,13 +262,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Catto_Walk_Spritesheet_5: 1400264414
-      Catto_Walk_Spritesheet_0: -227347207
-      Catto_Walk_Spritesheet_6: 722840552
-      Catto_Walk_Spritesheet_2: -599040999
-      Catto_Walk_Spritesheet_3: -241610932
-      Catto_Walk_Spritesheet_1: 1437677004
-      Catto_Walk_Spritesheet_4: -138390888
+      Catto_Idle_Spritesheet_0: 841218913
+      Catto_Idle_Spritesheet_4: 1524503270
+      Catto_Idle_Spritesheet_6: -379350457
+      Catto_Idle_Spritesheet_1: 846076244
+      Catto_Idle_Spritesheet_3: 133751497
+      Catto_Idle_Spritesheet_5: 1837611468
+      Catto_Idle_Spritesheet_2: 1959492966
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
