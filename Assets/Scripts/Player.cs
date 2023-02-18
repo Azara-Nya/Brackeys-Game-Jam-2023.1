@@ -16,7 +16,6 @@ public class Player : MonoBehaviour
     [SerializeField] private float shortJumpHeight;
     [SerializeField] private float checkRadius;
     [SerializeField] private float transTime = 1f;
-    [SerializeField] private int regressionAmount = 1;
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private Transform grounderObject;
     [SerializeField] private Transform startingPosition;
@@ -27,16 +26,17 @@ public class Player : MonoBehaviour
     [SerializeField] private AudioSource JumpSFX;
     [SerializeField] private AudioSource RegressionSFX;
     private GameObject[] RegaeCats;
-
     private float jumpRemeber;
     private float coyoteTime;
     private float moveInput;
     private bool facingLeft;
     private bool isGrounded;
-
+    public int regressionAmount = 1;
+    public int regressionsLeft;
     void Start()
     {
         rb.transform.position = startingPosition.transform.position;
+        regressionsLeft = regressionAmount;
         for (int i = 0; i < regressionAmount; i++)
         {
             Instantiate(regressionCat, regressionPoolPosition.transform.position, regressionPoolPosition.transform.rotation);
@@ -54,6 +54,7 @@ public class Player : MonoBehaviour
                 RegaeCats = GameObject.FindGameObjectsWithTag("RegressionCat");
                 if (!RegaeCats[i].GetComponent<Regression>().isUsed)
                 {
+                    regressionsLeft--;
                     RegressionSFX.Play();
                     CAndy.SetTrigger("RegressionFade");
                     RegaeCats[i].transform.position = startingPosition.transform.position;
