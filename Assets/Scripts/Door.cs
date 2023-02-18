@@ -8,19 +8,36 @@ public class Door : MonoBehaviour
     [SerializeField] private SpriteRenderer Sr;
     [SerializeField] private Color turnOff;
     [SerializeField] private Color turnOn;
+    [SerializeField] private bool isInverted;
     public bool isOpen;
 
     void Update()
     {
-        if (isOpen)
+        if (!isInverted)
         {
-            Sr.color = turnOn;
-            bc.isTrigger = false;
+            if (isOpen)
+            {
+                Sr.color = turnOn;
+                bc.isTrigger = false;
+            }
+            else
+            {
+                Sr.color = turnOff;
+                bc.isTrigger = true;
+            }
         }
         else
         {
-            Sr.color = turnOff;
-            bc.isTrigger = true;
+            if (isOpen)
+            {
+                Sr.color = turnOff;
+                bc.isTrigger = true;
+            }
+            else
+            {
+                Sr.color = turnOn;
+                bc.isTrigger = false;
+            }
         }
     }
 

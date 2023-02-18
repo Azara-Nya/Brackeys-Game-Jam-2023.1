@@ -4,24 +4,41 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
-    private bool inRange;
     [SerializeField] Door door;
     [SerializeField] private Sprite Off;
     [SerializeField] private Sprite On;
     [SerializeField] private SpriteRenderer Fanta;
     [SerializeField] private AudioSource buttonSFX;
+    [SerializeField] private bool isInverted;
+    private bool inRange;
 
     void Update()
     {
-        if(inRange)
+        if (isInverted)
         {
-            door.isOpen = true;
-            Fanta.sprite = On;
+            if (inRange)
+            {
+                door.isOpen = true;
+                Fanta.sprite = On;
+            }
+            else
+            {
+                door.isOpen = false;
+                Fanta.sprite = Off;
+            }
         }
         else
         {
-            door.isOpen = false;
-            Fanta.sprite = Off;
+            if (inRange)
+            {
+                door.isOpen = false;
+                Fanta.sprite = On;
+            }
+            else
+            {
+                door.isOpen = true;
+                Fanta.sprite = Off;
+            }
         }
     }
 
