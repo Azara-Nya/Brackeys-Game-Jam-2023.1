@@ -9,6 +9,7 @@ public class Button : MonoBehaviour
     [SerializeField] private Sprite Off;
     [SerializeField] private Sprite On;
     [SerializeField] private SpriteRenderer Fanta;
+    [SerializeField] private AudioSource buttonSFX;
 
     void Update()
     {
@@ -29,13 +30,30 @@ public class Button : MonoBehaviour
      {
         if(other.CompareTag("Player") | other.CompareTag("RegressionCat"))
         {
+            buttonSFX.Play();
             inRange = true;
         }
+        if(other.CompareTag("Box"))
+        {
+            buttonSFX.Play();
+        }
      }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if(other.CompareTag("Box"))
+        {
+            inRange = true;
+        }
+    }
 
      void OnTriggerExit2D(Collider2D other)
      {
         if(other.CompareTag("Player") | other.CompareTag("RegressionCat"))
+        {
+            inRange = false;
+        }
+        if(other.CompareTag("Box"))
         {
             inRange = false;
         }
