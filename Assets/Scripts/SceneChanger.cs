@@ -8,12 +8,13 @@ public class SceneChanger : MonoBehaviour
     [SerializeField] private string scene="MainMenu";
     [SerializeField] private float transTime = 1f;
     [SerializeField] private Animator Andy;
+    [SerializeField] private AudioSource completeSFX;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("E");
         if(other.CompareTag("Player"))
         {
+            completeSFX.Play();
             Loader();
         }
     }

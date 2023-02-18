@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Animator CAndy;
     [SerializeField] private AudioSource JumpSFX;
     [SerializeField] private AudioSource RegressionSFX;
+    [SerializeField] private AudioSource ResetSFX;
     private GameObject[] RegaeCats;
     private float jumpRemeber;
     private float coyoteTime;
@@ -133,6 +134,7 @@ public class Player : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.R))
         {
+            ResetSFX.Play();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 

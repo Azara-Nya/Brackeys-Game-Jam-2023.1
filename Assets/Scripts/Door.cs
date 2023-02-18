@@ -11,11 +11,11 @@ public class Door : MonoBehaviour
     {
         if (isOpen)
         {
-            bc.isTrigger = true;
+            bc.isTrigger = false;
         }
         else
         {
-            bc.isTrigger = false;
+            bc.isTrigger = true;
         }
     }
 
