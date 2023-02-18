@@ -49,28 +49,7 @@ public class Player : MonoBehaviour
 
     if(Input.GetKeyDown(KeyCode.Return))
         {
-            
-            for (int i = 0; i < regressionAmount; i++)
-            {
-                RegaeCats = GameObject.FindGameObjectsWithTag("RegressionCat");
-                if (!RegaeCats[i].GetComponent<Regression>().isUsed)
-                {
-                    regressionsLeft--;
-                    RegressionSFX.Play();
-                    CAndy.SetTrigger("RegressionFade");
-                    RegaeCats[i].transform.position = startingPosition.transform.position;
-                    RegaeCats[i].GetComponent<Regression>().StartReplay();
-                    RegaeCats[i].GetComponent<Regression>().isUsed = true;
-                    if(i < RegaeCats.Length-1)
-                    {
-                        RegaeCats[i + 1].GetComponent<Regression>().positions = new List<Vector2>();
-                        RegaeCats[i + 1].GetComponent<Regression>().movePositions = new List<float>();
-                    }
-                    rb.transform.position = startingPosition.transform.position;
-                    break;
-                }
-
-            }
+            Regress();
         }
     isGrounded = Physics2D.OverlapCircle(grounderObject.position, checkRadius, whatIsGround);
 
@@ -169,6 +148,32 @@ public class Player : MonoBehaviour
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    public void Regress()
+    {
+            for (int i = 0; i < regressionAmount; i++)
+            {
+                RegaeCats = GameObject.FindGameObjectsWithTag("RegressionCat");
+                if (!RegaeCats[i].GetComponent<Regression>().isUsed)
+                {
+                    regressionsLeft--;
+                    RegressionSFX.Play();
+                    CAndy.SetTrigger("RegressionFade");
+                    RegaeCats[i].transform.position = startingPosition.transform.position;
+                    RegaeCats[i].GetComponent<Regression>().StartReplay();
+                    RegaeCats[i].GetComponent<Regression>().isUsed = true;
+                    if(i < RegaeCats.Length-1)
+                    {
+                        RegaeCats[i + 1].GetComponent<Regression>().positions = new List<Vector2>();
+                        RegaeCats[i + 1].GetComponent<Regression>().movePositions = new List<float>();
+                    }
+                    rb.transform.position = startingPosition.transform.position;
+                    break;
+                }
+
+            }
+
     }
 
     IEnumerator carte()
