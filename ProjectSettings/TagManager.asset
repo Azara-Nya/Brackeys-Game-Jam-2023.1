@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RegressionCat
   - Box
+  - Music
   layers:
   - Default
   - TransparentFX
